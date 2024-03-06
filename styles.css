@@ -137,6 +137,12 @@ body{
     padding: 50px 0;
   }
 
+  hr{
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+  }
+
   .usvs{
     display: block;
     margin: 0 auto;
@@ -165,64 +171,48 @@ body{
     font-size: 30px;
   }
 
-  .grid{
-    display: grid;
-    max-width: 1400px;
-    grid-gap: 64px;
+.grid{
+  display: grid;
+  padding: 50px 20px;
+  grid-gap: 30px;
 }
 
 .grid-3-columns{
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-3-columns-with-first-narrow{
-    grid-template-columns: 1fr 2fr 2fr;
-}
-
-.card-header.grid{
-  grid-gap: 0;
-}
-
-.card-header{
-  padding: 0;
+  background-color: #ffffff;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card{
-  margin: 30px 0;
-  background: white;
+  background-color: #ffffff;
 }
 
-.card-body{
-  padding: 30px;
+.card h4{
+  margin: 0;
+  padding:  30px;
+  font-family: var(--plain-text);
+  font-size: 20px;
+  color: var(--darkblue-color);
 }
 
-.img-responsive{
-  margin-bottom:10px;
-  width: 100%;
+.card p{
+  padding: 0 30px;
+  font-family: var(--plain-text);
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--darkblue-color);
+}
+
+.card a{
+  color: var(--darkblue-color);
 }
 
 .button{
   display: block;
-  padding: 16px;
-  color: white;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  padding: 30px;
+  background-color: #ffffff;
+  font-size: 13px;
+  text-align: left;
   text-decoration: none;
-}
-
-.button:hover{
-  color: var(--accent-color);
-  background-color: #e9e8e8;
-  cursor: pointer;
-}
-
-.card-footer{
-  margin-top: 60px;
 }
 
 footer{
