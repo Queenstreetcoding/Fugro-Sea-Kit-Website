@@ -1,0 +1,248 @@
+:root{
+    --darkblue-color: #011E41;
+    --lightblue-color: #6788B1;
+    --highlight-color: #76BE82;
+    --white-color: #ffffff;
+    --box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+
+    --header-text: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --plain-text:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #DAE7E9;
+}
+
+.header{
+  background-color: #ffffff;
+}
+
+.header img{
+  padding-left: 5px;
+}
+
+.background-image {
+    display: inline-block;
+    padding: 200px 40px 40px 40px;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 95% 5%;
+    background-image: url("/img/USVs.jpg");
+  }
+
+  .background-image h1{
+    color: var(--white-color);
+    font-family: var(--header-text);
+  }
+
+  .background-image p{
+    color: var(--white-color);
+    font-family: var(--plain-text);
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+  .background-image hr{
+    color: var(--white-color);
+  }
+
+  .background-image .background-text{
+    padding-top: 70px;
+  }
+
+  .navigation{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: static;
+    background-color: var(--darkblue-color);
+  }
+
+  .navigation a:link{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .navigation a:visited {
+    text-decoration: none;
+  }
+  
+  .navigation a:active {
+    text-decoration: underline;
+  }
+
+  .navigation ul{
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkblue-color);
+    width: 100%;
+  }
+
+  .navigation li{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    padding: 8px 15px;
+    list-style-type: none;
+  }
+
+  #submenu{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    color: var(--white-color);
+    font-size: 13px;
+  }
+
+  li:hover ul#submenu{
+    opacity: 1;
+    visibility: visible;
+    opacity: 0.8;
+  }
+
+  #submenu li{
+    float: none;
+    width: 100%;
+  }
+
+  #submenu li:hover{
+    color: var(--lightblue-color)
+  }
+
+  .main-text{
+    background-color: #ffffff;
+  }
+
+  .what-we-do{
+    padding: 50px 55px;
+    font-family: var(--header-text);
+    color: var(--darkblue-color);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .main-explain{
+    font-family: var(--plain-text);
+    font-size: 15px;
+    line-height: 25px;
+    padding: 50px 0;
+  }
+
+  .usvs{
+    display: block;
+    margin: 0 auto;
+    padding: 0 60px;
+    background-color: #ffffff;
+  }
+
+  .usv-visual {
+    padding: 10px 0;
+    background-color: #DAE7E9;
+  }
+
+  .usv-visual p{
+    padding: 30px 52px;
+    font-family: var(--header-text);
+    color: var(--darkblue-color);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .bi-three-dots{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .grid{
+    display: grid;
+    max-width: 1400px;
+    grid-gap: 64px;
+}
+
+.grid-3-columns{
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow{
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.card-header.grid{
+  grid-gap: 0;
+}
+
+.card-header{
+  padding: 0;
+}
+
+.card{
+  margin: 30px 0;
+  background: white;
+}
+
+.card-body{
+  padding: 30px;
+}
+
+.img-responsive{
+  margin-bottom:10px;
+  width: 100%;
+}
+
+.button{
+  display: block;
+  padding: 16px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button:hover{
+  color: var(--accent-color);
+  background-color: #e9e8e8;
+  cursor: pointer;
+}
+
+.card-footer{
+  margin-top: 60px;
+}
+
+footer{
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+.contact-social {
+  font-family: var(--plain-text);
+  color: var(--darkblue-color);
+  font-size: 12px;
+  line-height: 25px;
+  list-style-type: none;
+}
+
+.contact-us {
+  font-family: var(--plain-text);
+  color: var(--darkblue-color);
+  font-size: 12px;
+  line-height: 25px;
+  list-style-type: none;
+}
